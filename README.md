@@ -1,59 +1,131 @@
-# TPFinal
+# Game of Thrones Angular Project
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+## Descripción
 
-## Development server
+Este proyecto fue desarrollado como parte del curso de Desarrollo con Angular en la UTN.BA. Es una aplicación web basada en la popular serie *Game of Thrones*, utilizando la API de ThronesAPI ([https://thronesapi.com/api/](https://thronesapi.com/api/)). El objetivo del proyecto es implementar un sistema de navegación entre páginas y consumir datos de una API externa, aplicando buenas prácticas de desarrollo con Angular.
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
+## Características
+
+El proyecto consta de tres páginas principales, cada una con temáticas relacionadas con *Game of Thrones*:
+
+1. **Home**:
+
+   - Una introducción al mundo de *Game of Thrones*.
+   - Incluye un video de fondo inmersivo relacionado con la serie.
+
+2. **Characters**:
+
+   - Muestra una lista de personajes obtenida desde la API de ThronesAPI.
+   - Incluye información relevante como el nombre, imagen y descripción del personaje.
+
+3. **Contact**:
+
+   - Un formulario simple de contacto.
+   - Diseñado para que los usuarios puedan enviar mensajes o consultas relacionadas con el sitio.
+
+---
+
+## Tecnologías utilizadas
+
+- **Framework principal**: Angular
+- **Lenguajes**: TypeScript, HTML, CSS
+- **API externa**: [ThronesAPI](https://thronesapi.com/api/)
+- **Estilos**: CSS puro
+- **Herramientas adicionales**:
+  - Visual Studio Code para el desarrollo
+  - Angular CLI para la configuración del proyecto
+
+---
+
+## Configuración y uso
+
+### Requisitos previos
+
+- Node.js (v14 o superior)
+- Angular CLI instalado globalmente
+
+### Pasos para ejecutar el proyecto localmente
+
+1. Clonar el repositorio:
+
+   ```bash
+   git clone <URL-del-repositorio>
+   cd <nombre-del-repositorio>
+   ```
+
+2. Instalar dependencias:
+
+   ```bash
+   npm install
+   ```
+
+3. Ejecutar el servidor de desarrollo:
+
+   ```bash
+   ng serve
+   ```
+
+4. Abrir la aplicación en el navegador:
+
+   ```
+   http://localhost:4200
+   ```
+
+---
+
+## Estructura del proyecto
+
+```
+src/
+├── app/
+│   ├── components/
+│   │   ├── pages/
+│   │   │   ├── home/
+│   │   │   ├── characters/
+│   │   │   ├── contact/
+│   ├── assets/
+│   └── environments/
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## Funcionalidades principales
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **Consumo de API**:
 
-```bash
-ng generate component component-name
-```
+  - Uso de servicios de Angular para conectarse a ThronesAPI.
+  - Obtención de datos dinámicos para la página de personajes.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- **Sistema de rutas**:
 
-```bash
-ng generate --help
-```
+  - Navegación entre las tres páginas principales utilizando Angular Router.
 
-## Building
+- **Diseño responsivo**:
 
-To build the project run:
+  - Adaptación del contenido a diferentes dispositivos.
 
-```bash
-ng build
-```
+- **Elementos interactivos**:
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+  - Video de fondo en la página principal.
+  - Formulario funcional en la página de contacto.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## Futuras mejoras
 
-```bash
-ng test
-```
+- Agregar funcionalidades adicionales, como:
+  - Una página con detalles específicos de cada personaje.
+  - Integración de más datos desde ThronesAPI.
+  - Diseños más complejos y personalizados para cada página.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## Autor
 
-```bash
-ng e2e
-```
+**Sebastián Ravenna**\
+Curso de Desarrollo con Angular, UTN.BA
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Si tenés algún comentario o sugerencia, no dudes en contactarme a través de la página de Contact.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

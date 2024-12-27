@@ -1,0 +1,15 @@
+nav {
+    background-color: black;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
