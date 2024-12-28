@@ -51,7 +51,7 @@ El proyecto consta de tres páginas principales, cada una con temáticas relacio
 1. Clonar el repositorio:
 
    ```bash
-   git clone <URL-del-repositorio>
+   git clone https://github.com/sebastianRavenna/UTN-Angular-TPF
    cd <nombre-del-repositorio>
    ```
 
