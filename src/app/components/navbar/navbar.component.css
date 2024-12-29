@@ -1,5 +1,5 @@
 nav {
-    background-color: black;
+    background-color: #4A4A4A;
     padding: 1rem;
 }
 
@@ -10,6 +10,6 @@ nav ul {
 }
 
 nav a{
-    color: white;
+    color: #D4AF37;
     text-decoration: none;
 }
