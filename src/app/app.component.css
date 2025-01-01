@@ -1,0 +1,17 @@
+*{
+    font-family: 'Cinzel', serif;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  router-outlet {
+    flex: 1 0 auto;
+  }
+  
+  app-footer {
+    margin-top: auto;
+  }

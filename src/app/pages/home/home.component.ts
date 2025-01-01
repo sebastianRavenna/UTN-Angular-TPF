@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewChild, ElementRef, AfterViewInit } from '@angular/core';
+import { UserComponent } from '../../components/user/user.component';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule],
+  imports: [CommonModule, UserComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

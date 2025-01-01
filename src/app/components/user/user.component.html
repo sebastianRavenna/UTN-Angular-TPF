@@ -1,0 +1,24 @@
+
+<div class="nombrePersona">
+  
+  
+  @if (mostrarFormulario) {
+    <form [formGroup]="nombrePersona" (ngSubmit)="onSubmit()">
+      
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" formControlName="name">
+      
+      <button type="submit">Aceptar</button>
+    </form>
+  }@else {
+  <h1>Hola {{ nombreMostrado }} </h1>
+
+  <h2>Bienvenido al Juego de los 7 Reinos</h2>
+
+  <h3>Conocé a los integrantes de todas las familias, o envianos un cuervo con el mensaje que quieras.</h3>
+
+  <h3>No te demores <strong>WINTER IS COMING!!</strong></h3>
+  
+
+  }  
+</div>
