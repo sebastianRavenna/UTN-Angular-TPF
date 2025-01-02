@@ -1,14 +1,14 @@
-<h1>contact</h1>
+<h1>Enviar un Cuervo</h1>
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
 
     <label for="name">Nombre:</label>
-    <input type="text" id="name" formControlName="name">
+    <input type="text" id="name" formControlName="name" placeholder="Nombre">
     
     <label for="email">Email:</label>
-    <input type="email" id="email" formControlName="email">
+    <input type="email" id="email" formControlName="email" placeholder="email@dominio.com">
     
     <label for="message">Mensaje:</label>
-    <textarea id="message" formControlName="message"></textarea>
+    <textarea id="message" formControlName="message" placeholder="Escribe tu mensaje y envialo con un Cuervo"></textarea>
     
     <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
 </form>
