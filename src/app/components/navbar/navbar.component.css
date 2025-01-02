@@ -9,11 +9,21 @@ nav ul {
     list-style: none;
 }
 
-nav a{
-    color: #D4AF37;
+li {
+    display: flex;
+    flex-direction: column;
+}
+
+li a{
     text-decoration: none;
 }
 
-img{
+li p{
+    color: #D4AF37;
+    text-align: center;
+}
+
+
+li img{
     height: 100px;
 }

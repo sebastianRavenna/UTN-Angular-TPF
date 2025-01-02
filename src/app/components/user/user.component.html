@@ -5,19 +5,19 @@
   @if (mostrarFormulario) {
     <form [formGroup]="nombrePersona" (ngSubmit)="onSubmit()">
       
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" formControlName="name">
+      <label for="name"></label>
+      <input type="text" id="name" formControlName="name" placeholder="Coloque su nombre" required>
       
       <button type="submit">Aceptar</button>
     </form>
   }@else {
-  <h1>Hola {{ nombreMostrado }} </h1>
+  <p class="Bienvenido">Bienvenido </p><p class="nombre">{{ nombreMostrado }} </p>
 
-  <h2>Bienvenido al Juego de los 7 Reinos</h2>
+  <p class="reinos"> al Juego de los 7 Reinos</p>
 
-  <h3>Conocé a los integrantes de todas las familias, o envianos un cuervo con el mensaje que quieras.</h3>
+  <p class="resumen">Conocé a los integrantes de todas las familias, o envianos un cuervo con el mensaje que quieras. No te demores,</p>
 
-  <h3>No te demores <strong>WINTER IS COMING!!</strong></h3>
+  <p class="winter">WINTER IS COMING!!</p>
   
 
   }  
