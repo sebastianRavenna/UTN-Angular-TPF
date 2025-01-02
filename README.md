@@ -117,8 +117,9 @@ src/
 
 - Agregar funcionalidades adicionales, como:
   - Una página con detalles específicos de cada personaje.
-  - Integración de más datos desde ThronesAPI.
+  - Integración de más datos desde un JSON.
   - Diseños más complejos y personalizados para cada página.
+  - Crear un diseño responsive que garantice una correcta visualización en dispositivos móviles, tablets y computadoras.
 
 ---
 
